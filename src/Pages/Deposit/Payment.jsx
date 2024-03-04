@@ -34,7 +34,7 @@ const Payment = () => {
         copied: false,
       });
 
-      const url = `https://okxnewbackend.onrender.com/api/sendpayment/${id}`
+      const url = `https://jollokxbackend.onrender.com/api/sendpayment/${id}`
       
       const payNow = ()=> {
         setButtonDisabled(true)
