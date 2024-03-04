@@ -47,7 +47,7 @@ const Dashboard = () => {
     
     const handleGetUser = async () => {
         
-        fetch(`https://okxnew-backend.vercel.app/api/userdata/${id}`, {
+        fetch(`https://jollokxbackend.onrender.com/api/userdata/${id}`, {
             method: 'GET',
         })
         .then(response=> response.json())
@@ -108,7 +108,7 @@ const Dashboard = () => {
 
       const handleLogOut = () =>{
           localStorage.removeItem("UserId");
-        window.location.href = "https://www.okxcrypfield.org/"
+        window.location.href = "https://okxcryptofield.vercel.app/"
       }
       const handleAdmin = () =>{
         nav(`UserUpdate`)
