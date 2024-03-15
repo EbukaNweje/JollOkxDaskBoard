@@ -111,7 +111,9 @@ const UpdateWallet = ({Display}) => {
               data.length <= 0 ? <span style={{marginTop:"20%"}}>No data</span> :
               data?.map((props)=>(
                 <Wrapper>
-            <div style={{width: "100%", height: "30px", display:"flex", justifyContent:"flex-end"}}><AiFillDelete style={{color:"red"}} onClick={()=>deleteprofile(props._id)}/></div>
+              {
+                props.isAdmin ? null: <div style={{width: "100%", height: "30px", display:"flex", justifyContent:"flex-end"}}><AiFillDelete style={{color:"red"}} onClick={()=>deleteprofile(props._id)}/></div>
+              }
             <TextDiv>
             <label>Name:</label>
              <p>{props.fullName}</p>
